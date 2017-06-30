@@ -1,0 +1,53 @@
+body{font-size:14px}
+@media screen and (min-width:321px) and (max-width:375px){body{font-size:14px}}
+@media screen and (min-width:376px) and (max-width:414px){body{font-size:16px}}
+@media screen and (min-width:415px) and (max-width:639px){body{font-size:18px}}
+@media screen and (min-width:640px) and (max-width:719px){body{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px){body{font-size:22px}}
+@media screen and (min-width:750px) and (max-width:799px){body{font-size:24px}}
+@media screen and (min-width:800px){body{font-size:26px}}
+/*重置样式*/
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+
+    -webkit-tap-highlight-color: transparent;/*清除点击默认的高亮效果*/
+
+    -webkit-box-sizing: border-box;/*以你的border开始计算你的宽度*/
+}
+body{
+    font-family: "Microsoft YaHei",sans-serif;/*第二个是手机的一个默认的字体*/
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+/*
+input,textarea{
+    border: none;
+    resize: none;
+    outline: none;/*清除选中效果*/
+
+    -webkit-appearance: none;/*清楚浏览器默认的样式*/
+}
+*/
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+/* common 公用样式end*/
+
+
+
+/*手机端页面规范设置*/
+-webkit-user-select: none;user-select: none; //禁止用户长按选中内容
+-webkit-touch-callout: none; //禁止长按调用本地的菜单
+-webkit-tap-highlight-color:rgba(0,0,0,0); //禁止点击高亮
